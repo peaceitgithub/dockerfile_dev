@@ -1,4 +1,4 @@
-FROM centos:8
+FROM centos:yves
 ARG user=jenkins
 ARG group=jenkins
 ARG uid=1000
