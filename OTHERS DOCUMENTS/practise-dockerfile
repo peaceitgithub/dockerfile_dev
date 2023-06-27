@@ -1,0 +1,82 @@
+################# RUN THIS IS CENTOS SERVER#############################
+#write a dockerfile with the following
+base OS is ubuntu 20.04
+update the base image
+install the following package
+* ansible
+* curl
+* git
+* gnupg
+* linux-headers
+* openssh-client
+* postgresql-client
+* python3
+* kubectl
+* kubens
+* nodejs
+* npm
+* vim
+* wget
+* net-tools
+* iputils-ping
+* apache2
+* tomcat
+* terraform
+* awscli
+* default-jre
+* default-jdk
+* maven
+* Jenkins
+* helm
+* make
+* git
+
+
+tips:
+- no need of multiple layers here all can be done in one layer
+update the base image again to clear the cache
+create a directory called /devops
+set working directory to /devops
+create a directory called /USER_HOME /VOLUME
+copy the containt of /root from the centos server under /USER_HOME inside the container
+execute the followin command
+* git clone https://github.com/kemvoueric/labs.git
+* git clone https://github.com/kemvoueric/Devops-easy-learning-jenkins-install.git
+* git clone https://github.com/kemvoueric/ansible-devopseasylearning.git
+open port from 10 to 6000
+
+create folowing variables
+* BUILD_NUMBER =The current build number
+* BUILD_ID =The current build id
+* BUILD_DISPLAY_NAME =The name of the current build
+* JOB_NAME =Name of the project of this build
+* EXECUTOR_NUMBER =The unique number that identifies the current executor
+* NODE_NAME =Name of the slave
+* NODE_LABELS =Whitespace-separated list of labels that the node is assigned
+* WORKSPACE =Absolute path of the build as a workspace
+* JENKINS_HOME =Absolute path on the master node for Jenkins to store data
+* JENKINS_URL =URL of Jenkins
+* BUILD_URL =Full URL of this build
+* JOB_URL =Full URL of this job
+
+
+set non alterable data to be your complete adddress
+remotely download tomcat version 9 under /opt
+create a user with your prefere-name 
+
+create the folowing volume under /VOLUME directory
+* development
+* testing
+* pre-production
+* production
+set the the default user to be prefere-name
+set the default shell to be sh
+
+
+########################
+Build the docker image with that dockerfile
+tag the dockerfile with your name
+push it under your repository in devop easy learning located in dockerhub
+exampple: docker push devopseasylearning2021/eric:dockerfile
+
+
