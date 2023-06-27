@@ -1,3 +1,4 @@
+
 FROM centos:joyce
 ARG user=jenkins
 ARG group=jenkins
