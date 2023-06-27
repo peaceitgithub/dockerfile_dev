@@ -1,4 +1,5 @@
-FROM centos:yves
+
+FROM centos:joyce
 ARG user=jenkins
 ARG group=jenkins
 ARG uid=1000
